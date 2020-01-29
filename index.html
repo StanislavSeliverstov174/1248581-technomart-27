@@ -9,14 +9,21 @@
       <div class="header-top">
         <div class="container">
           <div class="header-logo">
-            <a class="logo" href="index.html"></a>
+            <a class="logo" href="index.html"><img class="header-logo-image" src="img/svg-technomart/logo-technomart.svg" alt="Логотип техномарта"></a>
           </div>
           <div class="header-search">
+            <img class="header-search-image" src="img/svg-technomart/icon-search.svg" alt="Иконка поиска">
             <input type="text" name="Search" placeholder="Поиск">
           </div>
         <ul>
-          <li><a href="#">Закладки:0</a></li>
-          <li><a href="#">Корзина:0</a></li>
+          <li>
+            <img class="header-bookmark-image" src="img/svg-technomart/icon-bookmark.svg" alt="Иконка закладки">
+            <a href="#">Закладки:0</a>
+          </li>
+          <li>
+            <img class="header-cart-image" src="img/svg-technomart/icon-cart.svg" alt="Иконка корзины">
+            <a href="#">Корзина:0</a>
+          </li>
         </ul>
         <a href="#">Оформить заказ</a>
         </div>
@@ -26,6 +33,7 @@
           <div class="header-main-info">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="header-contacts">
+              <img class="header-phone-image" src="img/svg-technomart/icon-phone.svg" alt="Иконка телефона">
               <a class="header-contacts-tel" href="tel:+781255505555">
               +7(812)5550555  
               </a>
@@ -36,7 +44,9 @@
           </div>
           <div class="authorization">
               <ul>
-                <li><a href="#">Войти</a></li>
+                <li>
+                  <img class="header-login-image" src="img/svg-technomart/icon-login.svg" alt="Иконка входа в профиль">
+                  <a href="#">Войти</a></li>
                 <li><a href="#">Регистрация</a></li>
               </ul>
           </div>
@@ -54,6 +64,123 @@
         </nav>
       </div>
     </header>
+    <div class="popular-product">
+      <div class="container">
+        <div class="popular-product-head">
+          <h2>Популярные товары:</h2>
+          <a class="all-popular-product" href="#">Все популярные товары</a>
+        </div>
+        <div class="popular-product-list">
+          <ul class="product-list">
+            <li class="popular-item">
+              <article class="product">
+                <a href="#" class="product-item-image-link">
+                  <img class="product-item-image" src="img/jpg-technomart/Perforator_4.jpg" alt="Фотография товара">
+                  <div class="product-image-btns-wrap">
+                    <button class="product-image-button">Купить</button>
+                    <button class="product-image-button">В закладки</button>
+                  </div>
+                </a>
+                <h3 class="product-heading">Перфоратор BOSCH BFG 9000</h3>
+                <div class="product-price-old">
+                  32500 P.
+                </div>
+                <a href="#" class="product-price-actual">
+                  25500 P.
+                </a>
+              </article>
+            </li>
+            <li class="popular-item">
+              <article class="product">
+                <a href="#" class="product-item-image-link">
+                  <img class="product-item-image" src="img/jpg-technomart/Perforator_1.jpg" alt="Фотография товара">
+                  <div class="product-image-btns-wrap">
+                    <button class="product-image-button">Купить</button>
+                    <button class="product-image-button">В закладки</button>
+                  </div>
+                </a>
+                <h3 class="product-heading">Перфоратор BOSCH BFG 3000</h3>
+                <div class="product-price-old">
+                  22500 P.
+                </div>
+                <a href="#" class="product-price-actual">
+                  15500 P.
+                </a>
+              </article>
+            </li>
+            <li class="popular-item">
+              <article class="product">
+                <a href="#" class="product-item-image-link">
+                  <img product-item-image src="img/jpg-technomart/Perforator_2.jpg" alt="Фотография товара">
+                  <div class="product-image-btns-wrap">
+                    <button class="product-image-button">Купить</button>
+                    <button class="product-image-button">В закладки</button>
+                  </div>
+                </a>
+                <h3 class="product-heading">Перфоратор BOSCH BFG 6 000</h3>
+                <div class="product-price-old">
+                  30500 P.
+                </div>
+                <a href="#" class="product-price-actual">
+                  25500 P.
+                </a>
+              </article>
+            </li>
+            <li class="popular-item">
+              <article class="product">
+                <a href="#" class="product-item-image-link">
+                  <img class="product-item-image" src="img/jpg-technomart/Perforator_3.jpg" alt="Фотография товара">
+                  <div class="product-image-btns-wrap">
+                    <button class="product-image-button">Купить</button>
+                    <button class="product-image-button">В закладки</button>
+                  </div>
+                </a>
+                <h3 class="product-heading">Перфоратор BOSCH BFG 2 000</h3>
+                <a href="#" class="product-price-actual">
+                  12500 P.
+                </a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="popular-brands">
+      <div class="container">
+        <div class="popular-brand-head">
+          <h2>Популярные производители:</h2>
+          <a class="all-brand" href="#">Все произволители</a>
+        </div>
+        <div class="popular-brand-catalog">
+          <ul class="popular-brand-list">
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/bosch.png" alt="Логотип bosch"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/Makita.png" alt="Логотип Makita"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/DeWALT.png" alt="Логотип DeWALT"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/Интерскол.png" alt="Логотип Интерскол"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/Hitachi.png" alt="Логотип HITACHI"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/LG.png" alt="Логотип LG"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/AEG.png" alt="Логотип AEG"></div>
+            </li>
+            <li class="brand-list-element">
+              <div><img src="img/png-tehnomart/Metabo.png" alt="Логотип Metabo"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <div class="company">
       <div class="container">
         <section class="about">
@@ -79,7 +206,7 @@
           <br>
           заехав в наш офис:
         </p>
-        <a href="#"><img src="https://via.placeholder.com/300x160" alt="Миникарта"></a>
+        <a href="#"><img class="contacts-map-image" src="img/jpg-technomart/mini-map.jpg" alt="Миникарта"></a>
         <a href="#">Заблудились?Напишите нам!</a>
         </section>
       </div>
@@ -89,7 +216,7 @@
           <div class="container">
             <div class="footer-main-right">
               <div class="footer-logo">
-                <a class="logo" href="index.html"></a>
+                <a class="logo" href="index.html"><img class="footer-logo-image" src="img/svg-technomart/logo-technomart.svg" alt="Логотп техномарта"></a>
               </div>
               <div class="footer-contacts">
                 <address>
@@ -127,9 +254,9 @@
               </p>
             </div>
               <ul class="social">
-                <li class="social-item"><a class="social-links" href="#">Контакт</a></li>
-                <li class="social-item"><a class="social-links" href="#">Фейсбук</a></li>
-                <li class="social-item"><a class="social-links" href="#">Инстаграмм</a></li>
+                <li class="social-item"><a class="social-links" href="#"><img class="footer-vk-image" src="img/svg-technomart/icon-vk.svg" alt="Иконка вконтакте"></a></li>
+                <li class="social-item"><a class="social-links" href="#"><img class="footer-fb-image" src="img/svg-technomart/icon-fb.svg" alt="Иконка фейсбук"></a></li>
+                <li class="social-item"><a class="social-links" href="#"><img class="footer-insta-image" src="img/svg-technomart/icon-insta.svg" alt="Иконка  инстаграмм"></a></li>
               </ul>
             <div class="feedback">
               <p>
