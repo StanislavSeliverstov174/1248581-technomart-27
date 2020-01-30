@@ -11,17 +11,16 @@
           <div class="header-logo">
             <a class="logo" href="index.html"><img class="header-logo-image" src="img/svg-technomart/logo-technomart.svg" alt="Логотип техномарта"></a>
           </div>
-          <div class="header-search">
-            <img class="header-search-image" src="img/svg-technomart/icon-search.svg" alt="Иконка поиска">
-            <input type="text" name="Search" placeholder="Поиск">
-          </div>
+          <form class="header-search">
+            <label for="search">
+              <input type="text" id="search" name="Search" placeholder="Поиск">
+            </label>
+          </form>
         <ul>
           <li>
-            <img class="header-bookmark-image" src="img/svg-technomart/icon-bookmark.svg" alt="Иконка закладки">
             <a href="#">Закладки:0</a>
           </li>
           <li>
-            <img class="header-cart-image" src="img/svg-technomart/icon-cart.svg" alt="Иконка корзины">
             <a href="#">Корзина:0</a>
           </li>
         </ul>
@@ -33,21 +32,22 @@
           <div class="header-main-info">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="header-contacts">
-              <img class="header-phone-image" src="img/svg-technomart/icon-phone.svg" alt="Иконка телефона">
               <a class="header-contacts-tel" href="tel:+781255505555">
-              +7(812)5550555  
+                +7(812)5550555  
               </a>
               <address class="header-contacts-address">
-              г.Санкт-Петербург, ул.Б. Конюшенная д. 19/8
+                г.Санкт-Петербург, ул.Б. Конюшенная д. 19/8
               </address>
             </div>
           </div>
           <div class="authorization">
-              <ul>
-                <li>
-                  <img class="header-login-image" src="img/svg-technomart/icon-login.svg" alt="Иконка входа в профиль">
-                  <a href="#">Войти</a></li>
-                <li><a href="#">Регистрация</a></li>
+              <ul class="authorization-list">
+                <li class="authorization-item">
+                  <a href="#">Войти</a>
+                </li>
+                <li class="authorization-item">
+                  <a href="#">Регистрация</a>
+                </li>
               </ul>
           </div>
         </div>
@@ -66,7 +66,7 @@
     </header>
     <div class="popular-product">
       <div class="container">
-        <div class="popular-product-head">
+        <div class="popular-product-title">
           <h2>Популярные товары:</h2>
           <a class="all-popular-product" href="#">Все популярные товары</a>
         </div>
@@ -147,9 +147,9 @@
     </div>
     <div class="popular-brands">
       <div class="container">
-        <div class="popular-brand-head">
+        <div class=" popular-brand-title">
           <h2>Популярные производители:</h2>
-          <a class="all-brand" href="#">Все произволители</a>
+          <a class="popular-brand-btn" href="#">Все произволители</a>
         </div>
         <div class="popular-brand-catalog">
           <ul class="popular-brand-list">
@@ -178,6 +178,47 @@
               <div><img src="img/png-tehnomart/Metabo.png" alt="Логотип Metabo"></div>
             </li>
           </ul>
+        </div>
+      </div>
+    </div>
+    <div class="services">
+      <div class="container">
+        <div class="services-title">
+          <h1>Сервисы:</h1>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        </div>
+        <div class="services-content">
+          <ul class="services-list">
+            <li class="services-delivery">
+              <p>Доставка</p>
+            </li>
+            <li class="services-guarranty">
+              <p>Гарантия</p>
+            </li>
+            <li class="services-credit">
+              <p>Кредит</p>
+            </li>
+          </ul>
+          <div class="services-info-delivery">
+          <h3>Доставка</h3>
+          <p>Мы с удовольствием доставим ваш товар прямо 
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем, 
+            поднимая его на ваш этаж!</p>
+          </div>
+          <div class="services-info-guarranty">
+            <h3>Гарантия</h3>
+            <p>Если купленный у нас товар поломается или заискрит, 
+              а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+              Дом уж восстановите как-нибудь сами.</p>
+          </div>
+          <div class="sevices-info-credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! 
+              Кредитные консультанты придут вам на помощь.</p>
+            <button>Отправить заявку</button>
+          </div>
         </div>
       </div>
     </div>
@@ -254,9 +295,9 @@
               </p>
             </div>
               <ul class="social">
-                <li class="social-item"><a class="social-links" href="#"><img class="footer-vk-image" src="img/svg-technomart/icon-vk.svg" alt="Иконка вконтакте"></a></li>
-                <li class="social-item"><a class="social-links" href="#"><img class="footer-fb-image" src="img/svg-technomart/icon-fb.svg" alt="Иконка фейсбук"></a></li>
-                <li class="social-item"><a class="social-links" href="#"><img class="footer-insta-image" src="img/svg-technomart/icon-insta.svg" alt="Иконка  инстаграмм"></a></li>
+                <li class="social-item"><a class="social-links" href="#">ВК</a></li>
+                <li class="social-item"><a class="social-links" href="#">ФБ</a></li>
+                <li class="social-item"><a class="social-links" href="#">Инст</a></li>
               </ul>
             <div class="feedback">
               <p>
