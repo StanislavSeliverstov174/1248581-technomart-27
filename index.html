@@ -5,22 +5,23 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header-top">
         <div class="container">
           <div class="header-logo">
-            <a class="logo" href="index.html"><img class="header-logo-image" src="img/svg-technomart/logo-technomart.svg" alt="Логотип техномарта"></a>
+            <a class="logo" href="index.html"><img class="logo-image" src="img/icons-svg-technomart/logo-technomart.svg" alt="Логотип техномарта"></a>
           </div>
-          <form class="header-search">
+          <form class="header-search" action="" method="get">
             <label for="search">
-              <input type="text" id="search" name="Search" placeholder="Поиск">
+              <input type="search" id="search" name="Search" placeholder="Поиск">
+              <button type="submit">Поиск</button>
             </label>
           </form>
-        <ul>
-          <li>
+        <ul class="boookmarks-list">
+          <li class="bookmark-link">
             <a href="#">Закладки:0</a>
           </li>
-          <li>
+          <li class="cart-link">
             <a href="#">Корзина:0</a>
           </li>
         </ul>
@@ -39,8 +40,7 @@
                 г.Санкт-Петербург, ул.Б. Конюшенная д. 19/8
               </address>
             </div>
-          </div>
-          <div class="authorization">
+            <div class="authorization">
               <ul class="authorization-list">
                 <li class="authorization-item">
                   <a href="#">Войти</a>
@@ -49,9 +49,9 @@
                   <a href="#">Регистрация</a>
                 </li>
               </ul>
-          </div>
-        </div>
-        <nav class="main-nav">
+            </div>
+          </div>  
+          <nav class="main-nav">
             <ul class="nain-nav-list">
               <li><a href="index.html">Главная</a></li>
               <li><a href="#">Компания</a></li>
@@ -61,21 +61,22 @@
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
       </div>
     </header>
     <div class="popular-product">
       <div class="container">
-        <div class="popular-product-title">
+        <div class="popular-title">
           <h2>Популярные товары:</h2>
-          <a class="all-popular-product" href="#">Все популярные товары</a>
+          <a class="popular-product-btn" href="#">Все популярные товары</a>
         </div>
-        <div class="popular-product-list">
-          <ul class="product-list">
-            <li class="popular-item">
+        <div class="popular-catalog">
+          <ul class="popular-list">
+            <li class="popular-items">
               <article class="product">
                 <a href="#" class="product-item-image-link">
-                  <img class="product-item-image" src="img/jpg-technomart/Perforator_4.jpg" alt="Фотография товара">
+                  <img class="product-item-image" src="img/product-jpg-technomart/Perforator_4.jpg" alt="Фотография товара">
                   <div class="product-image-btns-wrap">
                     <button class="product-image-button">Купить</button>
                     <button class="product-image-button">В закладки</button>
@@ -90,10 +91,10 @@
                 </a>
               </article>
             </li>
-            <li class="popular-item">
+            <li class="popular-items">
               <article class="product">
                 <a href="#" class="product-item-image-link">
-                  <img class="product-item-image" src="img/jpg-technomart/Perforator_1.jpg" alt="Фотография товара">
+                  <img class="product-item-image" src="img/product-jpg-technomart/Perforator_1.jpg" alt="Фотография товара">
                   <div class="product-image-btns-wrap">
                     <button class="product-image-button">Купить</button>
                     <button class="product-image-button">В закладки</button>
@@ -108,10 +109,10 @@
                 </a>
               </article>
             </li>
-            <li class="popular-item">
+            <li class="popular-items">
               <article class="product">
                 <a href="#" class="product-item-image-link">
-                  <img product-item-image src="img/jpg-technomart/Perforator_2.jpg" alt="Фотография товара">
+                  <img product-item-image src="img/product-jpg-technomart/Perforator_2.jpg" alt="Фотография товара">
                   <div class="product-image-btns-wrap">
                     <button class="product-image-button">Купить</button>
                     <button class="product-image-button">В закладки</button>
@@ -126,10 +127,10 @@
                 </a>
               </article>
             </li>
-            <li class="popular-item">
+            <li class="popular-items">
               <article class="product">
                 <a href="#" class="product-item-image-link">
-                  <img class="product-item-image" src="img/jpg-technomart/Perforator_3.jpg" alt="Фотография товара">
+                  <img class="product-item-image" src="img/product-jpg-technomart/Perforator_3.jpg" alt="Фотография товара">
                   <div class="product-image-btns-wrap">
                     <button class="product-image-button">Купить</button>
                     <button class="product-image-button">В закладки</button>
@@ -147,35 +148,35 @@
     </div>
     <div class="popular-brands">
       <div class="container">
-        <div class=" popular-brand-title">
+        <div class="popular-title">
           <h2>Популярные производители:</h2>
           <a class="popular-brand-btn" href="#">Все произволители</a>
         </div>
-        <div class="popular-brand-catalog">
-          <ul class="popular-brand-list">
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/bosch.png" alt="Логотип bosch"></div>
+        <div class="popular-catalog">
+          <ul class="popular-list">
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/bosch.png" alt="Логотип bosch"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/Makita.png" alt="Логотип Makita"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/Makita.png" alt="Логотип Makita"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/DeWALT.png" alt="Логотип DeWALT"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/DeWALT.png" alt="Логотип DeWALT"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/Интерскол.png" alt="Логотип Интерскол"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/Интерскол.png" alt="Логотип Интерскол"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/Hitachi.png" alt="Логотип HITACHI"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/Hitachi.png" alt="Логотип HITACHI"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/LG.png" alt="Логотип LG"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/LG.png" alt="Логотип LG"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/AEG.png" alt="Логотип AEG"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/AEG.png" alt="Логотип AEG"></div>
             </li>
-            <li class="brand-list-element">
-              <div><img src="img/png-tehnomart/Metabo.png" alt="Логотип Metabo"></div>
+            <li class="popular-items">
+              <div><img src="img/brand-png-technomart/Metabo.png" alt="Логотип Metabo"></div>
             </li>
           </ul>
         </div>
@@ -247,17 +248,17 @@
           <br>
           заехав в наш офис:
         </p>
-        <a href="#"><img class="contacts-map-image" src="img/jpg-technomart/mini-map.jpg" alt="Миникарта"></a>
+        <a href="#"><img class="contacts-map-image" src="img/mini-map.jpg" alt="Миникарта"></a>
         <a href="#">Заблудились?Напишите нам!</a>
         </section>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
         <div class="footer-top">
           <div class="container">
             <div class="footer-main-right">
               <div class="footer-logo">
-                <a class="logo" href="index.html"><img class="footer-logo-image" src="img/svg-technomart/logo-technomart.svg" alt="Логотп техномарта"></a>
+                <a class="logo" href="index.html"><img class="logo-image" src="img/icons-svg-technomart/logo-technomart.svg" alt="Логотп техномарта"></a>
               </div>
               <div class="footer-contacts">
                 <address>
