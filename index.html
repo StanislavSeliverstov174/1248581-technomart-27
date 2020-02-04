@@ -21,10 +21,14 @@
           </form>
         <ul class="boookmarks-list">
           <li class="bookmark-item">
-            <a class="bookmark-link" href="#">Закладки:0</a>
+            <a class="bookmark-link" href="#">
+              Закладки:0
+            </a>
           </li>
           <li class="cart-item">
-            <a class="cart-link" href="#">Корзина:0</a>
+            <a class="cart-link" href="#">
+              Корзина:0
+            </a>
           </li>
         </ul>
         <a class="btn header-order-btn" href="#">Оформить заказ</a>
@@ -57,38 +61,38 @@
           </div>  
           <nav class="header-nav">
             <ul class="header-nav-list">
-              <li class="nav-items">
-                <a class="nav-link" href="index.html">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="index.html">
                   Главная
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Компания
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Каталог
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Новости
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Спецпредложения
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Доставка
                 </a>
               </li>
-              <li class="nav-items">
-                <a class="nav-link" href="#">
+              <li class="header-nav-items">
+                <a class="header-nav-link" href="#">
                   Контакты
                 </a>
               </li>
@@ -420,27 +424,31 @@
           </div>
         </div>
     </footer>
-    <section class="popup-feedback">
+    <div class="popup-feedback">
+      <button class="popup-close" type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="popup-top">
-          <div class="popup-user-name">
+        <div class="popup-field-conteiner">
+          <div class="popup-field">
             <label for="user-name">Ваше имя:</label>
             <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
           </div>
-          <div class="popup-email">  
+          <div class="popup-field">  
             <label for="user-email">Ваш e-mail:</label>
             <input type="email" name="user-email" id="user-email" placeholder="email@example.com">
           </div>
-          <div class="popup-text-mail">
+        </div>  
+          <div class="popup-field">
             <label for="text-mail">Текст письма:</label>
             <input type="textarea" name="text-mail" id="text-mail" placeholder="В свободной форме">
           </div>
-        </div>
         <div class="popup-bottom">
           <button class="btn btn-popup-feedback" type="submit">Отправить</button>
         </div>
-        <button class="popup-clouse" type="button">Закрыть</button>
       </form>
-    </section>
+    </div>
+    <div class="popup-map">
+      <button class="popup-close" type="button">Закрыть</button>
+      <img src="img/map-popup.jpg" alt="Большая конюшенная улица д.19">
+    </div>
   </body>
 </html>
