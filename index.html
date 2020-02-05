@@ -51,12 +51,12 @@
             <div class="authorization">
               <ul class="authorization-list">
                 <li class="authorization-item">
-                  <a class="entrance-btn" href="#">
+                  <a class="authorization-btn login" href="#">
                     Войти
                   </a>
                 </li>
                 <li class="authorization-item">
-                  <a class="registration-btn" href="#">
+                  <a class="authorization-btn registration" href="#">
                     Регистрация
                   </a>
                 </li>
@@ -232,44 +232,44 @@
         </div>
         <div class="popular-catalog">
           <ul class="popular-list">
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/bosch.png" alt="Логотип bosch">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/bosch.png" alt="Логотип bosch">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/Makita.png" alt="Логотип Makita">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/Makita.png" alt="Логотип Makita">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/DeWALT.png" alt="Логотип DeWALT">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/DeWALT.png" alt="Логотип DeWALT">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/Интерскол.png" alt="Логотип Интерскол">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/Интерскол.png" alt="Логотип Интерскол">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/Hitachi.png" alt="Логотип HITACHI">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/Hitachi.png" alt="Логотип HITACHI">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/LG.png" alt="Логотип LG">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/LG.png" alt="Логотип LG">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/AEG.png" alt="Логотип AEG">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/AEG.png" alt="Логотип AEG">
               </div>
             </li>
-            <li class="popular-items">
-              <div class="popular-brand">
-                <img class="brand-logo" src="img/brand-png-technomart/Metabo.png" alt="Логотип Metabo">
+            <li class="popular-item">
+              <div class="popular-item-wrap">
+                <img class="popular-brand-logo" src="img/brand-png-technomart/Metabo.png" alt="Логотип Metabo">
               </div>
             </li>
           </ul>
@@ -286,13 +286,16 @@
         <div class="services-content">
           <ul class="services-list">
             <li class="services-item">
-              <p>Доставка</p>
+              <label class="services-item-label" for="services-delivery">Доставка</label>
+              <input class="services-item-input" type="radio" name="delivery" id="services-delivery">
             </li>
             <li class="services-item">
-              <p>Гарантия</p>
+              <label class="services-item-label" for="services-warranty">Гарантия</label>
+              <input class="services-item-input" type="radio" name="warranty" id="services-warranty">
             </li>
             <li class="services-item">
-              <p>Кредит</p>
+              <label class="services-item-label" for="services-credit">Кредит</label>
+              <input class="services-item-input" type="radio" name="credit" id="services-credit">
             </li>
           </ul>
           <div class="services-preview-delivery">
@@ -326,7 +329,9 @@
     <div class="company">
       <div class="container">
         <section class="about">
-          <h2 class="about-title">Компания Техномарт</h2>
+          <h2 class="about-title">
+            Компания Техномарт
+          </h2>
           <p class="preview-about">
           Настоящий мужской шоппинг начинается здесь!Огромный выбор товаров для ремонта и строителства не оставитравнодушным любителей сэкономить на гастарбайтерах.
           </p>
@@ -335,14 +340,24 @@
           техномарт работает со многими транспортными компаниями:
           </p>
           <ul class="about-list">
-            <li class="about-item">Деловые линии</li>
-            <li class="about-item">Автотрейдинг</li>
-            <li class="about-item">ЖелДорЭкспедиция</li>
+            <li class="about-item">
+              Деловые линии
+            </li>
+            <li class="about-item">
+              Автотрейдинг
+            </li>
+            <li class="about-item">
+              ЖелДорЭкспедиция
+            </li>
           </ul>
-          <a class="btn details-btn" href="#">Подробнее о компании</a>
+          <a class="btn details-btn" href="#">
+            Подробнее о компании
+          </a>
         </section>
         <section class="contacts">
-        <h2 class="contacts-title">Контакты</h2>
+        <h2 class="contacts-title">
+          Контакты
+        </h2>
         <p class="preview-contacts">
           Вы можете забрать товар сами,
           <br>
