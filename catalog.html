@@ -5,6 +5,9 @@
   <title>
     HTML Academy: Техномарт
   </title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -12,7 +15,7 @@
       <div class="container">
         <div class="header-logo">
           <a class="logo" href="index.html">
-            <img class="logo-image" width="136.5" height="21.59" src="img/icons-technomart/logo-technomart.svg" alt="Логотип техномарта">
+            <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотип техномарта">
           </a>
         </div>
         <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
@@ -53,28 +56,43 @@
             </address>
           </div>
           <div class="authorization">
-            <div class="profile">
-              <a class="authorized-user" href="#">
-                Равшан Джамшутович
-              </a>
-              <a class="authorization-exit" href="#">
-                Выход
-              </a>
+            <div class="authorization">
+              <ul class="authorization-list">
+                <li class="authorization-item hide">
+                  <a class="authorization-btn login" href="#">
+                    Войти
+                  </a>
+                </li>
+                <li class="authorization-item hide">
+                  <a class="authorization-btn registration" href="#">
+                    Регистрация
+                  </a>
+                </li>
+                <li class="authorization-item">
+                  <a href="#" class="authorization-btn user">
+                    Равшан Джамшутович
+                  </a>
+                </li>
+                <li class="authorization-item">
+                  <a href="#" class="authorization-btn exit">
+                    Выход
+                  </a>
+                </li>
+              </ul>
+              <ul class="personal-area-list">
+                <li class="personal-area-item">
+                  <a class="my-order" href="#">
+                    Мои заказы
+                  </a>
+                </li>
+                <li class="personal-area-item">
+                  <a class="personal-area" href="#">
+                    Личный Кабинет
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="personal-area-list">
-              <li class="personal-area-item">
-                <a class="my-order" href="#">
-                  Мои заказы
-                </a>
-              </li>
-              <li class="personal-area-item">
-                <a class="personal-area" href="#">
-                  Личный Кабинет
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>  
+          </div>  
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="nav-items">
@@ -114,6 +132,7 @@
             </li>
           </ul>
         </nav>
+        </div>
       </div>
     </div>
   </header>
@@ -135,7 +154,7 @@
             </a>
           </li>
           <li class="breadcrumbs-item">
-            Перфараторы
+            <a class="breadcrumbs-link">Перфараторы</a>
           </li>
         </ul>
       </div>
@@ -462,7 +481,7 @@
         <div class="footer-main-right">
           <div class="footer-logo">
             <a class="logo" href="index.html">
-              <img class="logo-image" width="136.5" height="21.59" src="img/icons-technomart/logo-technomart.svg" alt="Логотп техномарта">
+              <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотп техномарта">
             </a>
           </div>
           <div class="footer-contacts">

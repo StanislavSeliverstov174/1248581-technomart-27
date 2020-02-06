@@ -1,0 +1,44 @@
+body{
+  margin:0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Cuprum", "PT Sans", sans-serif;
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+/*Скрытые блоки авторизации класс hide */
+.hide{
+  display: none;
+}
+.header{
+  background-image: url(/img/top-background.jpg);
+  background-color: #f4f7f9;
+}
+.header-top,
+.header-nav{
+  background-color: #32425c;
+  font-size: 17px;
+}
+.header-top a,
+.header-nav a{
+  color: #ffffff;
+}
+.boookmarks-list,
+.authorization-list,
+.header-nav-list
+{
+  list-style: none;
+}
+.boookmarks-list a:hover,
+.boookmarks-list a:focus,
+.header-nav-list a:hover,
+.header-nav-list a:focus{
+  background-color: #293448;
+}
+.popular-header{
+  background-color: #f9f5f0;
+}
