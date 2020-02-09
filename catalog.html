@@ -24,28 +24,28 @@
           </label>
           <button class="search-btn" type="submit">Поиск</button>
         </form>
-        <ul class="boookmarks-list">
-          <li class="bookmark-item">
-            <a class="bookmark-link" href="#">
-              Закладки:0
-            </a>
-          </li>
-          <li class="cart-item">
-            <a class="cart-link" href="#">
-              Корзина:0
-            </a>
-          </li>
-        </ul>
-        <a class="btn header-order-btn" href="#">
-          Оформить заказ
-        </a>
+      <ul class="boookmarks-list">
+        <li class="bookmark-item">
+          <a class="bookmark-link" href="#">
+            Закладки:0
+          </a>
+        </li>
+        <li class="cart-item">
+          <a class="cart-link" href="#">
+            Корзина:0
+          </a>
+        </li>
+      </ul>
+      <a class="btn header-order-btn" href="#">Оформить заказ</a>
       </div>
     </div>
     <div class="header-main">
       <div class="container">
         <div class="header-main-info">
           <p class="header-main-preview">
-            Интернет-магазин строительных материалов и инструментов для ремонта
+            Интернет-магазин <br>
+            строительных материалов <br>
+            и инструментов для ремонта
           </p>
           <div class="header-contacts">
             <a class="header-contacts-tel" href="tel:+78125550555">
@@ -79,7 +79,7 @@
                   </a>
                 </li>
               </ul>
-              <ul class="personal-area-list">
+              <ul class="personal-area-list hide">
                 <li class="personal-area-item">
                   <a class="my-order" href="#">
                     Мои заказы
@@ -93,46 +93,46 @@
               </ul>
             </div>
           </div>  
+        </div>  
         <nav class="header-nav">
           <ul class="header-nav-list">
-            <li class="nav-items">
-              <a class="nav-link" href="index.html">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="index.html">
                 Главная
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Компания
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Каталог
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Новости
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Спецпредложения
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Доставка
               </a>
             </li>
-            <li class="nav-items">
-              <a class="nav-link" href="#">
+            <li class="header-nav-items">
+              <a class="header-nav-link" href="#">
                 Контакты
               </a>
             </li>
           </ul>
         </nav>
-        </div>
       </div>
     </div>
   </header>
@@ -461,24 +461,40 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="pagination">
-          <div class="container">
-
+          <div class="pagination">
+            <a class="pagination-link" href="#">
+              1
+            </a>
+            <a class="pagination-link" href="#">
+              2
+            </a>
+            <a class="pagination-link" href="#">
+              3
+            </a>
+            <a class="pagination-link" href="#">
+              Следующая
+            </a>
           </div>
         </div>
-        <div class="description">
-          <div class="container">
-
-          </div>
-        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="container">
+        <h2 class="description-title">
+          Пара слов о перфораторах
+        </h2>
+        <p class="description-text">
+          Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
+          В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </div>
     </div>
   </main>
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="footer-main-right">
+        <div class="footer-main-left">
           <div class="footer-logo">
             <a class="logo" href="index.html">
               <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотп техномарта">
@@ -581,7 +597,7 @@
       </div>
     </div>
   </footer>
-  <div class="popup-added-cart">
+  <div class="popup-added-cart hide">
     <button class="popup-close" type="button">
       <span class="visually-hidden">
         Закрыть

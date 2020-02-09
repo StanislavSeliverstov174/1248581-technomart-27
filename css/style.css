@@ -10,35 +10,198 @@ body{
 a{
   text-decoration: none;
 }
+ul
+{
+  list-style: none;
+}
+.btn{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff; 
+}
+
 /*Скрытые блоки авторизации класс hide */
 .hide{
   display: none;
 }
+/* общий фон для хедера, и на всякий случай заливка цветом*/
 .header{
   background-image: url(/img/top-background.jpg);
   background-color: #f4f7f9;
 }
+/* Фон для верхней и нижней панели навигации в хедере*/
 .header-top,
 .header-nav{
   background-color: #32425c;
   font-size: 17px;
 }
+/* Цвет ссылок в навигации хедера*/
 .header-top a,
 .header-nav a{
   color: #ffffff;
 }
-.boookmarks-list,
-.authorization-list,
-.header-nav-list
-{
-  list-style: none;
+.header-main-preview{
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
 }
+/*Классы наведения и нажатия для навигации хедера*/
 .boookmarks-list a:hover,
 .boookmarks-list a:focus,
 .header-nav-list a:hover,
 .header-nav-list a:focus{
   background-color: #293448;
 }
+/*Фон для заголовков секций popular*/
 .popular-header{
   background-color: #f9f5f0;
+}
+/*Цвет текста в заголовках popular и catalog*/
+.popular-title,
+.catalog-title{
+  color: #32425c;
+}
+/*фон для раздела сервисов, немного о, заголовка католога, а так же заливка*/
+.services,
+.description,
+.catalog-title{
+  background-image: url(/img/top-background.jpg);
+  background-color: #f4f7f9;
+}
+/*фон для верхней панели футера*/
+.footer-top{
+  background-color: #32425c;
+}
+/* Фон для нижней панели футера*/
+.footer-bottom{
+  background-color: #293448;
+}
+/*-----------Структурирование документа с помощью флексов-----------*/
+/*---Общие параметры для контейнера---*/
+.container{
+  flex-direction: column;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+}
+/*---Параметры для хедера---*/
+.header-top .container{
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-main-info{
+  display: inherit;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-nav-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.boookmarks-list{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0px;
+}
+/*------------Параметры для блока features-------------*/
+.top-features-list,
+.bottom-features-list{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+.bottom-features-list{
+  flex-direction: column;
+}
+.bottom-features-wrap{
+  display: flex;
+  flex-direction: row;
+}
+.features-box-btn{
+  width: 135px;
+  height: 38px;
+  background-color: #e5e5e5;
+}
+.features-box{
+  width: 300px;
+  height: 123px;
+}
+/*---Параметры для блоков popular---*/
+.popular-header{
+  display: inherit;
+  justify-content: space-around;
+}
+.popular-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.popular-item{
+  width: 220px;
+}
+.popular-btn{
+  background-color: #ee3643;
+}
+/*--------Параметры для блока company---------*/
+.company .container{
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*--------Параметры для футера-------------*/
+.footer-top .container{
+  flex-direction: row;
+  
+  align-items: stretch;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer-nav{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+.footer-nav-list,
+.footer-category-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-bottom .container{
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 18px;
+}
+.feedback{
+  display: flex;
+  flex-direction: row;
+}
+.social{
+  display: flex;
+  flex-direction: row;
+}/*---------------Параметры для блока catalog на странице каталога---------------*/
+.catalog .container{
+  display: flex;
+  flex-direction: row;
+}
+.catalog-content{
+  width: 700px;
+}
+.catalog-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.filtres{
+  width: 220px;
+}
+/*------------Параиетры для блока breadcrumbs------------*/
+.breadcrumbs-list{
+  display: flex;
+  flex-direction: row;
 }
