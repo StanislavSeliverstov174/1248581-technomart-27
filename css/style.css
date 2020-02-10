@@ -1,11 +1,8 @@
 body{
   margin:0;
   padding: 0;
-  font-size: 13px;
-  line-height: 24px;
   font-weight: 400;
   font-family: "Cuprum", "PT Sans", sans-serif;
-  background-color: #ffffff;
 }
 a{
   text-decoration: none;
@@ -15,51 +12,25 @@ ul
   list-style: none;
 }
 .btn{
-  font-size: 14px;
-  line-height: 18px;
   color: #ffffff; 
 }
-
 /*Скрытые блоки авторизации класс hide */
 .hide{
   display: none;
 }
 /* общий фон для хедера, и на всякий случай заливка цветом*/
-.header{
-  background-image: url(/img/top-background.jpg);
+.header {
   background-color: #f4f7f9;
 }
 /* Фон для верхней и нижней панели навигации в хедере*/
-.header-top,
-.header-nav{
+.header-nav, 
+.header-top{
   background-color: #32425c;
-  font-size: 17px;
-}
-/* Цвет ссылок в навигации хедера*/
-.header-top a,
-.header-nav a{
-  color: #ffffff;
-}
-.header-main-preview{
-  font-size: 16px;
-  line-height: 23px;
-  color: #ee3643;
-}
-/*Классы наведения и нажатия для навигации хедера*/
-.boookmarks-list a:hover,
-.boookmarks-list a:focus,
-.header-nav-list a:hover,
-.header-nav-list a:focus{
-  background-color: #293448;
+  
 }
 /*Фон для заголовков секций popular*/
 .popular-header{
   background-color: #f9f5f0;
-}
-/*Цвет текста в заголовках popular и catalog*/
-.popular-title,
-.catalog-title{
-  color: #32425c;
 }
 /*фон для раздела сервисов, немного о, заголовка католога, а так же заливка*/
 .services,
@@ -75,6 +46,32 @@ ul
 /* Фон для нижней панели футера*/
 .footer-bottom{
   background-color: #293448;
+}
+/* Цвет текста ссылок в навигации хедера*/
+.header-top a,
+.header-nav a{
+  color: #ffffff;
+}
+.header-main-preview{
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+.header-top,
+.header-nav{
+  font-size: 17px;
+}
+/*Классы наведения и нажатия для навигации хедера*/
+.boookmarks-list a:hover,
+.boookmarks-list a:focus,
+.header-nav-list a:hover,
+.header-nav-list a:focus{
+  background-color: #293448;
+}
+/*Цвет текста в заголовках popular и catalog*/
+.popular-title,
+.catalog-title{
+  color: #32425c;
 }
 /*-----------Структурирование документа с помощью флексов-----------*/
 /*---Общие параметры для контейнера---*/
@@ -100,12 +97,13 @@ ul
   flex-direction: row;
   justify-content: space-around;
 }
-.boookmarks-list{
+.boookmarks-list {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-around;
   padding: 0;
-  margin: 0px;
+  margin: 0;
+  flex-grow: 1;
 }
 /*------------Параметры для блока features-------------*/
 .top-features-list,
@@ -128,8 +126,8 @@ ul
   background-color: #e5e5e5;
 }
 .features-box{
-  width: 300px;
-  height: 123px;
+  min-width: 300px;
+  min-height: 123px;
 }
 /*---Параметры для блоков popular---*/
 .popular-header{
@@ -142,7 +140,8 @@ ul
   justify-content: space-around;
 }
 .popular-item{
-  width: 220px;
+  min-width: 220px;
+  align-items: center;
 }
 .popular-btn{
   background-color: #ee3643;
@@ -155,10 +154,14 @@ ul
 /*--------Параметры для футера-------------*/
 .footer-top .container{
   flex-direction: row;
-  
   align-items: stretch;
   font-size: 18px;
   line-height: 24px;
+}
+.footer-main-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .footer-nav{
   display: flex;
@@ -171,15 +174,32 @@ ul
   flex-direction: row;
   justify-content: space-around;
 }
+.footer-nav-list a{
+  color: #f1f5f7;
+}
+.footer-category-item a{
+  color: #ffd180;
+}
+.footer-contacts,
+.footer-contacts a{
+  color: #f1f5f7;
+}
 .footer-bottom .container{
   flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
   line-height: 18px;
 }
+.copyright{
+  color: #ffffff;
+}
 .feedback{
   display: flex;
   flex-direction: row;
+  color: #ffffff;
+}
+.feedback a{
+  color: #ffd180;
 }
 .social{
   display: flex;
@@ -200,8 +220,13 @@ ul
 .filtres{
   width: 220px;
 }
-/*------------Параиетры для блока breadcrumbs------------*/
+/*------------Параметры для блока breadcrumbs------------*/
 .breadcrumbs-list{
   display: flex;
   flex-direction: row;
+}
+/*------------Параметры для блока description-------------*/
+.description .container{
+  justify-content: space-around;
+  min-height: 261px;
 }
