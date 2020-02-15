@@ -1,8 +1,12 @@
 body{
   margin:0;
   padding: 0;
-  font-weight: 400;
   font-family: "Cuprum", "PT Sans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  background-color: #ffffff;
 }
 a{
   text-decoration: none;
@@ -10,223 +14,458 @@ a{
 ul
 {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
-.btn{
-  color: #ffffff; 
-}
-/*Скрытые блоки авторизации класс hide */
 .hide{
   display: none;
 }
-/* общий фон для хедера, и на всякий случай заливка цветом*/
-.header {
-  background-color: #f4f7f9;
-}
-/* Фон для верхней и нижней панели навигации в хедере*/
-.header-nav, 
-.header-top{
-  background-color: #32425c;
+/*---------Общий стиль для текста кнопок----------*/
+a.btn,
+.buy-btn,
+.credit-btn{
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
   
 }
-/*Фон для заголовков секций popular*/
-.popular-header{
-  background-color: #f9f5f0;
-}
-/*фон для раздела сервисов, немного о, заголовка католога, а так же заливка*/
-.services,
-.description,
-.catalog-title{
-  background-image: url(/img/top-background.jpg);
-  background-color: #f4f7f9;
-}
-/*фон для верхней панели футера*/
-.footer-top{
-  background-color: #32425c;
-}
-/* Фон для нижней панели футера*/
-.footer-bottom{
-  background-color: #293448;
-}
-/* Цвет текста ссылок в навигации хедера*/
-.header-top a,
-.header-nav a{
+/*--------Стили для Хедера---------*/
+.header-top{
+  background-color: #293449;
+
+  font-size: 17px;
+  line-height: 18px;
   color: #ffffff;
+}
+.header-top a{
+  color: #ffffff;
+}
+.header-logo,
+.footer-logo{
+  background-color: #ee3643;
+}
+.header-logo:hover,
+.footer-logo:hover{
+  background-color: #ca2c37;  
+}
+.header-logo:active
+.footer-logo:active{
+  background-color: #ba2732;
+}
+.bookmark-link:hover,
+.cart-link:hover{
+  background-color: #212a3a;
+}
+.bookmark-link:active,
+.cart-link:active{
+  background-color: #161d29;
+  opacity: 0.6;
+}
+.header-order-btn{
+  background-color: #63a63e;
+}
+.header-order-btn:hover{
+  background-color: #5fbb2d;
+}
+.header-order-btn:active{
+  background-color: #518534;
+  opacity: 0.5;
+}
+.header-search{
+  background-color: #293449;
+  border: none;
+  color: #ffffff
+}
+.header-search:hover{ 
+  background-color: #212a3a;
+  color: #ffffff;
+  border: none;
+}
+.header-search:focus{
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+}
+.header-main{
+  background-image: url(/img/top-background.jpg);
 }
 .header-main-preview{
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  font-style: italic;
+  width: 196px;
+  height: 63px;
+  padding-top: 8px;
 }
-.header-top,
-.header-nav{
-  font-size: 17px;
+.header-contacts-tel{
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+  padding-left: 74px;
+  padding-top: 13px;
+  padding-right: 52px;
+  padding-bottom: 12px;
 }
-/*Классы наведения и нажатия для навигации хедера*/
-.boookmarks-list a:hover,
-.boookmarks-list a:focus,
-.header-nav-list a:hover,
-.header-nav-list a:focus{
-  background-color: #293448;
+.header-contacts-address{
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
 }
-/*Цвет текста в заголовках popular и catalog*/
-.popular-title,
-.catalog-title{
+.authorization-btn{
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+.authorization-btn:hover{
+  color: #ee3643;
+}
+.authorization-btn:active{
+  color:#000000;
+  opacity: 0.3;
+}
+.personal-area-item a{
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
   color: #32425c;
 }
-/*-----------Структурирование документа с помощью флексов-----------*/
-/*---Общие параметры для контейнера---*/
-.container{
-  flex-direction: column;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 940px;
+.header-nav{
+  background-color: #32425c;
 }
-/*---Параметры для хедера---*/
-.header-top .container{
-  flex-direction: row;
-  justify-content: space-around;
+.header-nav a{
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
 }
-.header-main-info{
-  display: inherit;
-  flex-direction: row;
-  justify-content: space-around;
+.header-nav a:hover{
+  background-color: #293449;
 }
-.header-nav-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.header-nav a:active{
+  background-color: #293449;
+  opacity: 0.5;
 }
-.boookmarks-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
+/*-------------Стили для блоков стрницы INDEX-----------*/
+.features-box{
+  width: 300px;
+  height: 123px;
 }
-/*------------Параметры для блока features-------------*/
-.top-features-list,
-.bottom-features-list{
-  display: flex;
-  justify-content: space-between;
-  margin: 0px;
-  padding: 0px;
+.top-features-item:first-child .features-box{
+  background-color: #ffbf47;
 }
-.bottom-features-list{
-  flex-direction: column;
+.top-features-item:last-child .features-box{
+  background-color: #dc91d8;
 }
-.bottom-features-wrap{
-  display: flex;
-  flex-direction: row;
+.top-features-item .features-box{
+  background-color: #3bbce3;
 }
-.features-box-btn{
-  width: 135px;
-  height: 38px;
+.bottom-features-item .features-box{
+  background-color: #8ed78f;
+}
+.bottom-features-item:last-child .features-box{
+  background-color: #ffc047;
+} 
+.features-box-title{
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+.features-box-btn {
   background-color: #e5e5e5;
 }
-.features-box{
-  min-width: 300px;
-  min-height: 123px;
+.features-box-btn:hover{
+  background-color: #cccccc;
 }
-/*---Параметры для блоков popular---*/
-.popular-header{
-  display: inherit;
-  justify-content: space-around;
+.features-box-btn:active{
+  background-color: #b2b2b2;
 }
-.popular-list{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.popular-item{
-  min-width: 220px;
-  align-items: center;
-}
-.popular-btn{
+.open-catalog-btn{
   background-color: #ee3643;
 }
-/*--------Параметры для блока company---------*/
-.company .container{
-  flex-direction: row;
-  justify-content: space-between;
+.open-catalog-btn:hover{
+  background-color: #ca2c37;
 }
-/*--------Параметры для футера-------------*/
-.footer-top .container{
-  flex-direction: row;
-  align-items: stretch;
+.open-catalog-btn:active{
+  background-color: #ba2732;
+}
+.slider{
+  background-color: blueviolet;
+  width: 620px;
+  height: 266px;
+}
+.slider-title{
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+.slider-preview{
   font-size: 18px;
   line-height: 24px;
+  color: #ffffff;
 }
-.footer-main-left{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.slider a{
+  color: #ffffff
 }
-.footer-nav{
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
+.popular-header{
+  background-color: #f9f5f0;
 }
-.footer-nav-list,
-.footer-category-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+.popular-title{
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+.buy-btn{
+  background-color: #63a63e;
+  border: none;
+}
+.buy-btn:hover{
+  background-color: #5fbb2d;
+  border: none;
+}
+.buy-btn:active{
+  background-color: #518534;
+  border-top: none;
+}
+.adding-bookmarks-btn{
+  background-color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+  color: #32425c;
+}
+.adding-bookmarks-btn:hover{
+  color: #32425c;
+}
+.adding-bookmarks-btn:active{
+  color: #32425c;
+  opacity: 0.3;
+}
+.product-title{
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+.product-price-old{
+  font-size: 17px;
+  line-height: 18px;
+  color: #a9a9a9;
+}
+.product-price-actual{
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #ee3643;
+}
+.popular-item{
+  border: 1px solid #e7e7e7;
+}
+.services{
+  background-image: url(/img/top-background.jpg);
+}
+.services-title{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.services-preview-title{
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.services-label-wrap{
+  font-size: 21px;
+  line-height: 30px;
+}
+.services-item-label{
+  background-color: #32425c;
+  color: #ffffff;
+}
+.services-item-label:hover{
+  background-color: #293449;
+}
+.services-item-label:active{
+  background-color: #ffffff;
+  color: #32425c;
+}
+.about-title{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.about-item{
+  font-size: 18px;
+  line-height: 20px;
+}
+/*-----------------Стили для футера---------------*/
+.footer-top{
+  background-color: #32425c;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+.footer-contacts address{
+  font-style: normal;
+}
+.footer-contacts-tel{
+  color: #f3f7f9;
 }
 .footer-nav-list a{
   color: #f1f5f7;
 }
-.footer-category-item a{
+.footer-nav-list a:hover{
+  text-decoration: underline;
+}
+.footer-nav-list a:active{
+  opacity: 0.5;
+  text-decoration: none;
+}
+.footer-category-list a{
   color: #ffd180;
 }
-.footer-contacts,
-.footer-contacts a{
-  color: #f1f5f7;
+.footer-category-list a:hover{
+  text-decoration: underline;
 }
-.footer-bottom .container{
-  flex-direction: row;
-  justify-content: space-between;
+.footer-category-list a:active{
+  opacity: 0.5;
+  text-decoration: none;
+}
+.footer-bottom{
+  background-color: #293449;
+}
+.copyright-preveiw{
+  color: #ffffff;
   font-size: 16px;
   line-height: 18px;
 }
-.copyright{
-  color: #ffffff;
-}
-.feedback{
-  display: flex;
-  flex-direction: row;
-  color: #ffffff;
+.feedback{font-size: 16px;
+  line-height: 18px;
+  color:#ffffff;
+  
 }
 .feedback a{
   color: #ffd180;
 }
-.social{
-  display: flex;
-  flex-direction: row;
-}/*---------------Параметры для блока catalog на странице каталога---------------*/
-.catalog .container{
-  display: flex;
-  flex-direction: row;
+.feedback a:hover{
+  text-decoration: underline;
 }
-.catalog-content{
-  width: 700px;
+.feedback a:active{
+  text-decoration: none;
+  color: #ee3643;
 }
-.catalog-list{
+/*-----------Структурирование документа с помощью флексов-----------*/
+/*---Общие параметры для контейнера---*/
+html,
+body{
+  min-width: 1200px;
+  min-height: 3151px;
+}
+/*---------Параметры для container----------*/
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+/*---Параметры для хедера---*/
+.header{
+  min-height: 320px;
+}
+.header-top{
+  width: 100%;
+  min-height: 42px;
+}
+.boookmarks-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 42px;
+}
+.boookmark-item{
+  align-items: center;
+}
+.header-main{
+  
+  min-height:  278px;
+}
+.header-main-info{
+  padding-top: 46px;
+  display: flex;
+  justify-content: space-around;
+}
+.header-main-preview{
+  margin: 0;
+}
+.authorization-list{
+  display: flex;
+  min-width: 282px;
+  justify-content: space-around;
+}
+.authorization-item:first-child{
+  width: 121px;
+  height: 45px;
+}
+.authorization-item:nth-child(2){
+  width: 150px;
+  height: 45px;
+}
+.header-contacts{
+  display: flex;
+  min-width: 270px;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.header-main-preview{
+  min-width: 196px;
+  min-height: 63px;
+  margin-bottom: 44px;
+}
+.header-nav-list{
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60px;
+}
+.features p{
+  margin: 0;
+}
+.top-features-wrap{
+  margin-top: 59px;
+}
+.bottom-features-wrap{
+  margin-top: 20px;
+}
+.top-features-list{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-features-wrap{
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-features-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.popular-catalog{
+  margin-top: 20px;
+}
+.popular-list{
+  display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-.filtres{
-  width: 220px;
+.catalog-product-list .popular-item{
+  min-height: 318px;
+  min-width: 220px;
 }
-/*------------Параметры для блока breadcrumbs------------*/
-.breadcrumbs-list{
-  display: flex;
-  flex-direction: row;
-}
-/*------------Параметры для блока description-------------*/
-.description .container{
-  justify-content: space-around;
-  min-height: 261px;
+.catalog-company-list .popular-item{
+  min-height: 145px;
+  min-width: 220px;
 }
