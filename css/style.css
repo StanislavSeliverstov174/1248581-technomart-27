@@ -41,16 +41,13 @@ a.btn,
 .header-top a{
   color: #ffffff;
 }
-.header-logo,
-.footer-logo{
+.header-logo{
   background-color: #ee3643;
 }
-.header-logo:hover,
-.footer-logo:hover{
+.header-logo:hover{
   background-color: #ca2c37;  
 }
-.header-logo:active
-.footer-logo:active{
+.header-logo:active{
   background-color: #ba2732;
 }
 .bookmark-link:hover,
@@ -209,6 +206,7 @@ a.btn,
 .slider a{
   color: #ffffff
 }
+/*------------Стили для раздела Popular--------*/
 .popular-header{
   background-color: #f9f5f0;
 }
@@ -264,7 +262,9 @@ a.btn,
 .popular-item{
   border: 1px solid #e7e7e7;
 }
-.services{
+/*-------------Стили для раздела Servises---------------*/
+.services,
+.description{
   background-image: url(/img/top-background.jpg);
 }
 .services-title{
@@ -292,7 +292,8 @@ a.btn,
   background-color: #ffffff;
   color: #32425c;
 }
-.about-title{
+.about-title,
+.contacts-title{
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -308,6 +309,15 @@ a.btn,
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+}
+.footer-logo{
+  background-color: #ee3643;
+}
+.footer-logo:hover{
+  background-color: #ca2c37;  
+}
+.footer-logo:active{
+  background-color: #ba2732;
 }
 .footer-contacts address{
   font-style: normal;
@@ -359,7 +369,7 @@ a.btn,
   color: #ee3643;
 }
 /*-----------Структурирование документа с помощью флексов-----------*/
-/*---Общие параметры для контейнера---*/
+/*---------------Общие параметры для контейнера-------------*/
 html,
 body{
   min-width: 1200px;
@@ -431,6 +441,7 @@ body{
   justify-content: space-around;
   min-height: 60px;
 }
+/*--------Стили для features---------*/
 .features p{
   margin: 0;
 }
@@ -454,12 +465,18 @@ body{
   justify-content: space-between;
 }
 .popular-catalog{
-  margin-top: 20px;
+  padding-top: 20px;
+}
+.catalog-company{
+  min-height: 415px;
 }
 .popular-list{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
+}
+.catalog-company-list{
+  flex-direction: row;
 }
 .catalog-product-list .popular-item{
   min-height: 318px;
@@ -468,4 +485,99 @@ body{
 .catalog-company-list .popular-item{
   min-height: 145px;
   min-width: 220px;
+}
+/*----------Стили для Company--------*/
+.company-box{
+  display: flex;
+  min-height: 536px;
+  justify-content: space-between;
+}
+.about{
+  flex-basis: 536px;
+}
+.contacts{
+  flex-basis: 104px;
+}
+/*---------Стили для Футера-----------*/
+
+.footer-top-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  min-height: 193px;
+}
+.footer-main-left{
+  display: flex;
+  flex-direction: column;
+}
+.footer-main-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer-contacts{
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav{
+  display: flex;
+  justify-content: space-between;
+  min-height: 91px;
+}
+.footer-nav-list{
+  display: flex;
+  justify-content: space-between;
+  min-width: 543px;
+}
+.footer-category-list{
+  display: flex;
+  justify-content: space-between;
+  min-width: 521px;
+}
+.footer-logo{
+  min-height: 68px;
+}
+.footer-contacts{
+  min-height: 64px;
+}
+.footer-bottom-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyright-preveiw{
+  min-width: 260px;
+}
+.feedback{
+  display: flex;
+  justify-content: space-between;
+}
+.social{
+  display: flex;
+}
+/*----------------Стили страницы catalog-----------*/
+/*------------Стили для блока breadcrumbs-----------*/
+.breadcrumbs-box{
+  display: flex;
+  align-items: center;
+  min-height: 59px;
+}
+.breadcrumbs-list{
+  display: flex;
+  align-items: center;
+}
+/*------------Стили для блока Description---------*/
+.description{
+  min-height: 261px;
+}
+.description-title{
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 68px;
+}
+.catalog-item{
+  border: 1px solid #e7e7e7;
 }

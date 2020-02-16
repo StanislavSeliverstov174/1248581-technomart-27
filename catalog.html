@@ -12,31 +12,39 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <div class="container">
-        <div class="header-logo">
-          <a class="logo" href="index.html">
-            <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотип техномарта">
-          </a>
-        </div>
-        <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="header-search-label" for="search">
-            <input class="heaer-search" type="search" id="search" name="Search" placeholder="Поиск">
-          </label>
-          <button class="search-btn" type="submit">Поиск</button>
-        </form>
-      <ul class="boookmarks-list">
-        <li class="bookmark-item">
-          <a class="bookmark-link" href="#">
-            Закладки:0
-          </a>
-        </li>
-        <li class="cart-item">
-          <a class="cart-link" href="#">
-            Корзина:0
-          </a>
-        </li>
-      </ul>
-      <a class="btn header-order-btn" href="#">Оформить заказ</a>
+      <div class="container">  
+        <ul class="boookmarks-list">
+          <li class="bookmark-item">
+            <div class="header-logo">
+              <a class="logo" href="index.html">
+                <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотип техномарта">
+              </a>
+            </div>
+          </li>
+          <li class="bookmark-item">
+            <form class="header-search-form" action="https://echo.htmlacademy.ru" method="post">
+              <label class="header-search-label" for="search">
+                <input class="header-search" type="search" id="search" name="Search" placeholder="Поиск:">
+              </label>
+              <button class="search-btn hide" type="submit">Поиск</button>
+            </form>
+          </li>
+          <li class="bookmark-item">
+            <a class="bookmark-link" href="#">
+              Закладки:0
+            </a>
+          </li>
+          <li class="bookmark-item">
+            <a class="cart-link" href="#">
+              Корзина:0
+            </a>
+          </li>
+          <li class="bookmark-item">
+            <a class="header-order-btn" href="#">
+              Оформить заказ
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="header-main">
@@ -139,7 +147,8 @@
   <main>
     <div class="breadcrumbs">
       <div class="container">
-        <ul class="breadcrumbs-list">
+        <div class="breadcrumbs-box">
+          <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html"></a>
           </li>
@@ -156,7 +165,8 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Перфараторы</a>
           </li>
-        </ul>
+          </ul>
+        </div>  
       </div>
     </div>
     <div class="catalog-header">
@@ -496,23 +506,14 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="footer-main-left">
-          <div class="footer-logo">
+        <div class="footer-top-box">
+          <div class="footer-main-nav">
+            <div class="footer-logo">
             <a class="logo" href="index.html">
               <img class="logo-image" width="136" height="22" src="img/icons-technomart/logo-technomart.svg" alt="Логотп техномарта">
             </a>
-          </div>
-          <div class="footer-contacts">
-            <address>
-              г.Санкт-Петербург, ул.Б. Конюшенная д. 19/8
-            </address>
-            <a class="footer-contacts-tel" href="tel:+781255505555">
-              +7(812)5550555  
-            </a>
-          </div>  
-        </div>  
-        <div class="footer-nav">
-          <ul class="footer-nav-list">
+            </div>
+            <ul class="footer-nav-list">
               <li class="footer-nav-item">
                 <a class="footer-nav-link" href="#">
                   Компания
@@ -538,8 +539,18 @@
                   Контакты
                 </a>
               </li>
-          </ul>  
-          <ul class="footer-category-list">
+            </ul>   
+          </div>  
+          <div class="footer-nav">
+            <div class="footer-contacts">
+              <address>
+                г.Санкт-Петербург, ул.Б. Конюшенная д. 19/8
+              </address>
+              <a class="footer-contacts-tel" href="tel:+781255505555">
+                +7(812)5550555  
+              </a>
+            </div>
+            <ul class="footer-category-list">
               <li class="footer-category-item">
                 <a class="footer-category-link" href="#">
                   Материалы
@@ -556,23 +567,25 @@
                 </a>
               </li>
               <li class="footer-category-item">
-                <a class="footer-category-link" href="#">
-                  Спецпредложения
-                </a>
+                <a class="footer-category-link" href="#"
+                >Спецпредложения
+              </a>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
       <div class="container">
-        <div class="copyright">
+        <div class="footer-bottom-box">
+          <div class="copyright">
           <p class="copyright-preveiw">
             &#169;2010-2017 Компания &#171;Техномарт&#187;
             <br>
             Все права защищены
           </p>
-        </div>
+          </div>
           <ul class="social">
             <li class="social-item">
               <a class="social-links" href="#">ВК</a>
@@ -584,7 +597,7 @@
               <a class="social-links" href="#">Инст</a>
             </li>
           </ul>
-        <div class="feedback">
+          <div class="feedback">
           <p class="feedback-preveiw">
             Обрантная связь:
             <br>
@@ -595,6 +608,7 @@
             <br>
             <a href="#">htmlacademy.ru</a>
           </p>
+          </div>
         </div>
       </div>
     </div>
