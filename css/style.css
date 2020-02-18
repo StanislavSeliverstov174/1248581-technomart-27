@@ -17,6 +17,10 @@ ul
   margin: 0;
   padding: 0;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 .hide{
   display: none;
 }
@@ -41,8 +45,15 @@ a.btn,
 .header-top a{
   color: #ffffff;
 }
-.header-logo{
+.header-logo {
   background-color: #ee3643;
+  min-width: 220px;
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -5px;
+  border-bottom: 5px solid #b52933;
 }
 .header-logo:hover{
   background-color: #ca2c37;  
@@ -388,14 +399,31 @@ body{
   width: 100%;
   min-height: 42px;
 }
-.boookmarks-list {
+.bookmarks-list {
   display: flex;
-  justify-content: space-around;
+  min-height: 42px;
   align-items: center;
+  flex-wrap: wrap;
+}
+.bookmark-item{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
   min-height: 42px;
 }
-.boookmark-item{
+.bookmark-item a{
+  display: flex;
+  min-height: 42px;
   align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.header-search-form{
+  width: 100%;
+}
+.header-search{
+  height: 42px;
+  width: 100%;
 }
 .header-main{
   
