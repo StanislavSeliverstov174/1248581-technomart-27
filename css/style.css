@@ -156,6 +156,20 @@ a.btn,
   background-color: #293449;
   opacity: 0.5;
 }
+.header-nav-list{
+  flex-wrap: wrap;
+}
+.header-nav-items{
+  flex-grow: 1; 
+}
+.header-nav-link{
+  display: flex;
+  width: 100%;
+  min-height: 55px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid #293449;
+}
 /*-------------Стили для блоков стрницы INDEX-----------*/
 .features-box{
   width: 300px;
