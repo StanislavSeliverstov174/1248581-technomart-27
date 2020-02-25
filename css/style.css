@@ -280,6 +280,8 @@ input[type="radio"].visually-hidden {
 
 .header-main-info {
   display: flex;
+  padding-top: 46px;
+  padding-bottom: 44px;
 }
 
 .header-main-about {
@@ -291,16 +293,12 @@ input[type="radio"].visually-hidden {
   padding-top: 8px;
   width: 320px;
   margin: 0;
-  padding-top: 49px;
-  padding-bottom: 44px;
   padding-left: 52px;
- 
 }
 .header-contacts-tel {
   position: relative;
   display: block;
   font-family: "Cuprum", "Arial", sans-serif;
-  font-weight: 500;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
@@ -310,7 +308,6 @@ input[type="radio"].visually-hidden {
   padding-top: 9px;
   padding-left: 71px;
   padding-bottom: 12px;
-  padding-right: 49px;
 }
 .header-contacts-tel::before {
   content: "";
@@ -319,14 +316,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-}
-
-.header-contacts-tel::before {
-  top: 13px;
-  left: 15px;
+  top: 10px;
+  left: 13px;
   width: 19px;
   height: 19px;
-  background-image: url("../img/icons-technomart/icon-phone.svg.svg")
+  background-image: url("../img/icons-technomart/icon-phone.svg")
 }
 .header-contacts-address {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -335,22 +329,20 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   color: #32425c;
   padding-left: 10px;
-  padding-top: 4px;
+  margin-top: 4px;
 }
 .header-contacts {
   display: block;
-  padding-top: 46px;
 }
 .authorization-list{
   display: block;
   list-style: none;
   margin: 0;
-  padding-top: 46px;
-  padding-left: 69px;
+  margin-left: 69px;
   
 }
 .authorization-item{
-  display: inline-block;
+  display: block;
 }
 .authorization-btn {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -359,6 +351,19 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #ffffff;
   width: 100%;
+}
+.login {
+  display: block;
+  width: 121px;
+  height: 45px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+  padding-left: 47px;
+  padding-right: 26px;
+}
+.registration{
+  display: block;
+  width: 150px;
   height: 45px;
 }
 .authorization-btn:hover {
@@ -747,10 +752,10 @@ input[type="radio"].visually-hidden {
 }
 
 .header-main-info {
-  padding-top: 46px;
+  
   display: flex;
   justify-content: space-around;
-  margin-bottom: 44px;
+  
 }
 
 .header-main-preview {
