@@ -25,10 +25,6 @@ img {
   box-sizing: border-box;
 }
 
-.hide {
-  display: none;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -67,11 +63,11 @@ input[type="radio"].visually-hidden {
 }
 
 .btn:hover {
-
+  background-color: #ca2c37;
 }
 
 .btn:active {
-
+  background-color: #ba2732;
 }
 
 .container {
@@ -281,7 +277,7 @@ input[type="radio"].visually-hidden {
 .header-main-info {
   display: flex;
   padding-top: 46px;
-  padding-bottom: 44px;
+  padding-bottom: 39px;
 }
 
 .header-main-about {
@@ -290,7 +286,7 @@ input[type="radio"].visually-hidden {
   line-height: 23px;
   color: #ee3643;
   font-style: italic;
-  padding-top: 8px;
+  padding-top: 3px;
   width: 320px;
   margin: 0;
   padding-left: 52px;
@@ -305,8 +301,8 @@ input[type="radio"].visually-hidden {
   border: 3px solid #ffffff;
   width: 270px;
   height: 45px;
-  padding-top: 9px;
-  padding-left: 71px;
+  padding-top: 10px;
+  padding-left: 72px;
   padding-bottom: 12px;
 }
 .header-contacts-tel::before {
@@ -339,9 +335,13 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   margin-left: 69px;
+  padding: 0;
 }
 .authorization-item{
-  display: block;
+  display: inline-block;
+}
+.hide {
+  display: none;
 }
 .authorization-btn {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -352,17 +352,34 @@ input[type="radio"].visually-hidden {
 }
 .login {
   display: block;
+  position: relative;
   width: 121px;
   height: 45px;
-  padding-top: 14px;
-  padding-bottom: 16px;
-  padding-left: 47px;
-  padding-right: 26px;
+  padding-left: 48px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.login::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  top: 13px;
+  left: 15px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icons-technomart/icon-login.svg")
 }
 .registration{
   display: block;
   width: 150px;
   height: 45px;
+  padding-left: 25px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-left: 6px;
 }
 .authorization-btn:hover {
   color: #ee3643;
@@ -371,6 +388,67 @@ input[type="radio"].visually-hidden {
   color: #000000;
   opacity: 0.3;
 }
+.header-nav{
+  min-width: 940px;
+  min-height: 55px;
+}
+.header-nav-list{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 940px;
+  min-height: 55px;
+}
+.header-nav-list .header-nav-items:first-child{
+  width: 140px;
+  padding-left: 17px;
+}
+.header-nav-list .header-nav-items:nth-child(2){
+  width: 125px;
+}
+.header-nav-list .header-nav-items:nth-child(3){
+  width: 110px;
+}
+.header-nav-list .header-nav-items:nth-child(4){
+  width: 115px;
+}
+.header-nav-list .header-nav-items:nth-child(5){
+  width: 170px;
+  padding-left: 6px;
+}
+.header-nav-list .header-nav-items:nth-child(6){
+  width: 140px;
+}
+.header-nav-list .header-nav-items:last-child{
+  width: 140px;
+  padding-right: 30px;
+}
+.header-nav-items{
+  display: inline-block;
+  background-color: #32425c;
+}
+.header-nav-items:hover{
+  background-color: #293449;
+}
+.header-nav-items:active{
+  background-color: #1d2739;
+}
+.header-nav-link{
+  display: block;
+  font-family: "Cuprum", "Arial", sans-serif;
+  border-bottom: 5px solid #293449;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  height: 60px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  text-align: center;
+  }
+  .header-nav-link:active{
+    opacity: 0.5;
+  }
 /*
 
 
