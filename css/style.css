@@ -573,6 +573,8 @@ input[type="radio"].visually-hidden {
 }
 .bottom-features-item {
   margin-left: 20px;
+}
+.bottom-features-item:first-of-type{
   margin-bottom: 20px;
 }
 .bottom-features-item .features-box-title{
@@ -641,108 +643,33 @@ a.open-catalog-btn{
 .slider-scroll-right{
   float: right;
 }
-
-/*-------------Стили для блоков стрницы INDEX-----------*/
-/* .features {
-  height: 521px;
-}
-
-.top-features-item {
-  min-width: 300px;
-  min-height: 123px;
-}
-
-
-
-.top-features-item:first-child .features-box {
-
-}
-
-.top-features-item:last-child .features-box {
-  
-}
-
-.top-features-item .features-box {
-  
-}
-
-.bottom-features-item .features-box {
-  background-color: #8ed78f;
-}
-
-.bottom-features-item:last-child .features-box {
-  background-color: #ffc047;
-}
-
-
-
-.features-box-btn {
-  width: 135px;
-  height: 38px;
-}
-
-.features-btn {
-  background-color: #000000;
-  opacity: 0.1;
-  border-radius: 5%;
-}
-
-.features-btn:hover {
-  background-color: #000000;
-  opacity: 0.2;
-}
-
-.features-btn:active {
-  background-color: #000000;
-  opacity: 0.3;
-}
-
-.open-catalog-btn {
-  background-color: #ee3643;
-}
-
-.open-catalog-btn:hover {
-  background-color: #ca2c37;
-}
-
-.open-catalog-btn:active {
-  background-color: #ba2732;
-}
-
-.slider {
-  background-color: blueviolet;
-  width: 620px;
-  height: 266px;
-}
-
-.slider-title {
-  font-size: 36px;
-  line-height: 36px;
-  color: #ffffff;
-}
-
-.slider-preview {
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-}
-
-.slider a {
-  color: #ffffff
-}
-
-/*------------Стили для раздела Popular--------*/
-/* .popular-header {
+/*--------------Стили для блоков popular-----------*/
+.popular-header{
+  margin-top: 49px;
+  margin-bottom: 24px;
+  padding-left: 28px;
+  padding-right: 24px;
+  height: 89px;
   background-color: #f9f5f0;
 }
-
-.popular-title {
+.popular-title{
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  color: #32425c;
+  margin: 0;
+  margin-top: 37px;
   text-transform: uppercase;
+  color: #32425c;
+  float: left;
 }
-
+a.popular-btn{
+  font-family: "Cuprum", "Arial", sans-serif;
+  display: block;
+  width: 253px;
+  height: 38px;
+  margin-top: 29px;
+  float: right;
+}
 .buy-btn {
   background-color: #63a63e;
   border: none;
@@ -773,7 +700,6 @@ a.open-catalog-btn{
   color: #32425c;
   opacity: 0.3;
 }
-
 .product-title {
   font-size: 18px;
   line-height: 20px;
@@ -794,6 +720,96 @@ a.open-catalog-btn{
   font-weight: bold;
   background-color: #ee3643;
 }
+.popular-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-product-list .popular-item{
+  width: 220px;
+  height: 318px;
+  margin-right: 20px;
+}
+.popular-item{
+  border: 1px solid #e7e7e7;
+}
+.catalog-company-list .popular-item{
+  width: 220px;
+  height: 145px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+.popular-item:nth-of-type(4n){
+  margin-right: 0;
+}
+/*-------------Стили для раздела Servises---------------*/
+.services {
+  background-image: url(/img/top-background.jpg);
+}
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.services-preview-title {
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.services-label-wrap {
+  font-size: 21px;
+  line-height: 30px;
+}
+
+.services-item-label {
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.services-item-label:hover {
+  background-color: #293449;
+}
+
+.services-item-label:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+.about-title,
+.contacts-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.about-item {
+  font-size: 18px;
+  line-height: 20px;
+} */
+/*------------Стили для раздела Popular--------*/
+/* .popular-header {
+  background-color: #f9f5f0;
+}
+
+.popular-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+
+
+.product-title {
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000;
+  font-weight: bold;
+}
+
 
 .popular-item {
   border: 1px solid #e7e7e7;

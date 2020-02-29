@@ -413,20 +413,29 @@
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
       <div class="services-content">
-        <input class="services-item-input" type="radio" name="delivery" id="services-delivery" checked>
-        <input class="services-item-input" type="radio" name="warranty" id="services-warranty">
-        <input class="services-item-input" type="radio" name="credit" id="services-credit">
-        <div class="services-label-wrap">
-          <label class="services-item-label" for="services-delivery">
-            Доставка
-          </label>
-          <label class="services-item-label" for="services-warranty">
-            Гарантия
-          </label>
-          <label class="services-item-label" for="services-credit">
-            Кредит
-          </label>
-        </div>
+        <fieldset>
+          <legend>Сервисы</legend>
+          <ul>
+            <li>
+              <input class="services-item-input" type="radio" name="delivery" id="services-delivery" checked>
+              <label class="services-item-label" for="services-delivery">
+                Доставка
+              </label>
+            </li>
+            <li>
+              <input class="services-item-input" type="radio" name="warranty" id="services-warranty">
+              <label class="services-item-label" for="services-warranty">
+                Гарантия
+              </label>
+            </li>
+            <li>
+              <input class="services-item-input" type="radio" name="credit" id="services-credit">
+              <label class="services-item-label" for="services-credit">
+                Кредит
+              </label>
+            </li>
+          </ul>
+        </fieldset>
         <div class="services-preview-delivery services-preview-wrap">
           <h3 class="services-preview-title">
             Доставка
