@@ -909,7 +909,21 @@ a.product-price-actual {
   font-size: 18px;
   line-height: 20px;
 }
-
+/*------------Стили для страницы Cataloga-----*/
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.catalog-list .popular-item {
+  width: 220px;
+  height: 318px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 1px;
+}
 /*------------Стили для раздела Popular--------*/
 /* .popular-header {
   background-color: #f9f5f0;
