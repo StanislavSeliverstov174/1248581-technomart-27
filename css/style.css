@@ -725,12 +725,14 @@ a.open-catalog-btn {
 }
 
 /*--------------Стили для блоков popular-----------*/
-.popular-header {
-  margin-top: 49px;
-  margin-bottom: 24px;
-  padding-top: 37px;
-  padding-left: 28px;
-  padding-right: 24px;
+.popular-header-product {
+  margin-top: 54px;
+  margin-bottom: 20px;
+}
+
+.popular-header { 
+  padding-left: 29px;
+  padding-right: 23px;
   height: 89px;
 
   background-color: #f9f5f0;
@@ -744,6 +746,7 @@ a.open-catalog-btn {
   text-transform: uppercase;
   color: #32425c;
   float: left;
+  padding-top: 29px;
 }
 
 a.popular-btn {
@@ -751,11 +754,13 @@ a.popular-btn {
   display: block;
   width: 253px;
   float: right;
+  margin-top: 23px;
 }
 
 .buy-btn {
   background-color: #63a63e;
   border: none;
+  border-radius: 5%;
 }
 
 .buy-btn:hover {
@@ -789,12 +794,20 @@ a.popular-btn {
   line-height: 20px;
   color: #000000;
   font-weight: bold;
+  text-align: center;
+  margin: 0;
+  padding-left: 24px;
+  padding-right: 22px;
 }
 
 .product-price-old {
+  font-family: 'PT Sans';
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
+  text-align: center;
+  padding-top: 12px; 
+  font-weight: bold;
 }
 
 .product-price-actual {
@@ -802,7 +815,17 @@ a.popular-btn {
   line-height: 18px;
   color: #ffffff;
   font-weight: bold;
-  background-color: #ee3643;
+  background-image: url(/img/icons-technomart/red-button.svg);
+}
+a.product-price-actual {
+  display: block;
+  width: 141px;
+  height: 38px;
+  position: relative;
+  top: 11px;
+  left: 43px;
+  padding-top: 9px;
+  padding-left: 36px;
 }
 
 .popular-list {
@@ -817,6 +840,7 @@ a.popular-btn {
   width: 220px;
   height: 318px;
   margin-right: 20px;
+  padding: 1px;
 }
 
 .popular-item {
@@ -834,6 +858,10 @@ a.popular-btn {
   margin-right: 0;
 }
 
+.popular-header-company{
+  margin-top: 21px;
+
+}
 /*-------------Стили для раздела Servises---------------*/
 .services {
   background-image: url(/img/top-background.jpg);
