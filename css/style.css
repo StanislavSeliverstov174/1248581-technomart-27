@@ -44,7 +44,7 @@ input[type="radio"].visually-hidden {
 .btn {
   display: inline-block;
   padding: 11px 35px;
-  font: "Cuprum", "Arial", san-serif;
+  font-family: "Cuprum", "Arial", san-serif;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
@@ -209,7 +209,7 @@ input[type="radio"].visually-hidden {
   left: 17px;
   width: 14px;
   height: 16px;
-  background-image: url("../img/icons/icon-bookmark.svg")
+  background-image: url("../img/icons/icon-bookmark.svg");
 }
 
 .header-top-btn-cart::before {
@@ -217,7 +217,7 @@ input[type="radio"].visually-hidden {
   left: 14px;
   width: 15px;
   height: 15px;
-  background-image: url("../img/icons/icon-cart.svg")
+  background-image: url("../img/icons/icon-cart.svg");
 }
 
 .header-top-btn-full {
@@ -265,7 +265,7 @@ input[type="radio"].visually-hidden {
 
 .header-main {
   background-repeat: repeat;
-  background-image: url('../img/top-background.jpg');
+  background-image: url("../img/top-background.jpg");
   background-size: 20px 20px;
 }
 
@@ -320,7 +320,7 @@ input[type="radio"].visually-hidden {
   left: 13px;
   width: 19px;
   height: 19px;
-  background-image: url("../img/icons/icon-phone.svg")
+  background-image: url("../img/icons/icon-phone.svg");
 }
 
 .header-contacts-address {
@@ -350,7 +350,7 @@ input[type="radio"].visually-hidden {
 }
 
 .authorization-item {
-  margin-right: 10px
+  margin-right: 10px;
 }
 
 .authorization-item:last-child {
@@ -481,7 +481,7 @@ input[type="radio"].visually-hidden {
 
 .authorization-bottom-link:active {
   opacity: 0.3;
-  color: #32425c
+  color: #32425c;
 }
 
 .authorization-user-list.hide {
@@ -615,18 +615,18 @@ input[type="radio"].visually-hidden {
   margin-top: 13px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .features-box-btn:hover {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .features-box-btn:active {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-.bottom-features-wrap{
+.bottom-features-wrap {
   display: flex;
 }
 
@@ -648,6 +648,7 @@ input[type="radio"].visually-hidden {
   background-color: #8ed78f;
   margin-bottom: 20px;
 }
+
 .features-box.discounts::after {
   right: 45px;
   top: 25px;
@@ -730,7 +731,7 @@ a.open-catalog-btn {
   margin-bottom: 20px;
 }
 
-.popular-header { 
+.popular-header {
   padding-left: 29px;
   padding-right: 23px;
   height: 89px;
@@ -757,73 +758,150 @@ a.popular-btn {
   margin-top: 23px;
 }
 
-.buy-btn {
+.popular-item {
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+
+  width: 60px;
+  height: 60px;
+
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.product-btns-wrap {
+  display: none;
+}
+
+.flag-new {
+  background: url("/img/product/new-flag.png") no-repeat 0 0;
+}
+
+.product-btns-wrap {
+  position: absolute;
+  top: 1px;
+  left: 0;
+
+  width: 218px;
+  height: 135px;
+  padding: 40px 0;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 10;
+}
+
+.product-btns-wrap .buy-btn,
+.product-btns-wrap .adding-bookmarks-btn {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+
   background-color: #63a63e;
-  border: none;
-  border-radius: 5%;
-}
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius: 3px;
 
-.buy-btn:hover {
-  background-color: #5fbb2d;
-  border: none;
-}
-
-.buy-btn:active {
-  background-color: #518534;
-  border-top: none;
-}
-
-.adding-bookmarks-btn {
-  background-color: #ffffff;
-  border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
   text-transform: uppercase;
-  color: #32425c;
 }
 
-.adding-bookmarks-btn:hover {
-  color: #32425c;
+.product-btns-wrap .buy-btn:hover {
+  background-color: #5fbb2d;
+  border-color: #5fbb2d;
+  border-bottom-color: #367315;
 }
 
-.adding-bookmarks-btn:active {
-  color: #32425c;
+.product-btns-wrap .buy-btn:active {
+  background-color: #518534;
+  border-color: #518534;
+}
+
+.product-btns-wrap .adding-bookmarks-btn:hover {
+  background-color: #ffffff;
+  border-color: #32425c;
+}
+
+.product-btns-wrap .adding-bookmarks-btn:active {
   opacity: 0.3;
+}
+
+.popular-item .adding-bookmarks-btn {
+  color: #32425c;
+  background: white;
+  border-bottom-color: #63a63e;
+}
+
+.popular-item .product-btns-wrap {
+  display: none;
+}
+
+.popular-item:hover .product-btns-wrap {
+  display: block;
+}
+
+.popular-item:hover {
+  box-shadow: 0px 5px 10px 5px grey;
 }
 
 .product-title {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
-  font-weight: bold;
-  text-align: center;
   margin: 0;
-  padding-left: 24px;
-  padding-right: 22px;
+
+  min-height: 40px;
+  padding: 0 25px;
 }
 
-.product-price-old {
-  font-family: 'PT Sans';
+.product-price-discount {
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
-  text-align: center;
-  padding-top: 12px; 
+  padding-top: 12px;
   font-weight: bold;
+
+  min-height: 30px;
+
+  margin-bottom: 10px;
+
+  color: #999;
+  text-decoration: line-through;
 }
 
 .product-price-actual {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  font-weight: bold;
+  position: relative;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  width: 141px;
+
   background-image: url(/img/icons-technomart/red-button.svg);
 }
-a.product-price-actual {
+
+.product-price-actual {
   display: block;
   width: 141px;
   height: 38px;
   position: relative;
-  top: 11px;
-  left: 43px;
+
   padding-top: 9px;
   padding-left: 36px;
 }
@@ -858,10 +936,16 @@ a.product-price-actual {
   margin-right: 0;
 }
 
-.popular-header-company{
+.popular-header-company {
   margin-top: 21px;
-
 }
+
+.catalog-company-list .popular-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*-------------Стили для раздела Servises---------------*/
 .services {
   background-image: url(/img/top-background.jpg);
@@ -909,6 +993,7 @@ a.product-price-actual {
   font-size: 18px;
   line-height: 20px;
 }
+
 /*------------Стили для страницы Cataloga-----*/
 .catalog-list {
   display: flex;
@@ -917,6 +1002,7 @@ a.product-price-actual {
   padding: 0;
   list-style: none;
 }
+
 .catalog-list .popular-item {
   width: 220px;
   height: 318px;
@@ -924,79 +1010,40 @@ a.product-price-actual {
   margin-bottom: 20px;
   padding: 1px;
 }
-/*------------Стили для раздела Popular--------*/
-/* .popular-header {
-  background-color: #f9f5f0;
+
+/*-------------Стили для about----------*/
+
+.company-box {
+  display: flex;
+  min-width: 536px;
 }
 
-.popular-title {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  text-transform: uppercase;
+.company-wrap {
+  min-height: 323px;
 }
 
-
-
-.product-title {
-  font-size: 18px;
-  line-height: 20px;
-  color: #000000;
-  font-weight: bold;
+.company-about {
+  min-width: 535px;
+  margin-right: 104px;
 }
 
-
-.popular-item {
-  border: 1px solid #e7e7e7;
-} */
-/*-------------Стили для раздела Servises---------------*/
-/* .services,
-.description {
-  background-image: url(/img/top-background.jpg);
-}
-
-.services-title {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
-.services-preview-title {
-  font-size: 36px;
-  line-height: 36px;
-  text-transform: uppercase;
-}
-
-.services-label-wrap {
-  font-size: 21px;
-  line-height: 30px;
-}
-
-.services-item-label {
-  background-color: #32425c;
-  color: #ffffff;
-}
-
-.services-item-label:hover {
-  background-color: #293449;
-}
-
-.services-item-label:active {
-  background-color: #ffffff;
-  color: #32425c;
+.company-contacts {
+  min-width: 301px;
 }
 
 .about-title,
 .contacts-title {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .about-item {
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 20px;
-} */
+}
 /*-----------------Стили для футера---------------*/
 /* .footer-top {
   background-color: #32425c;
