@@ -1363,6 +1363,9 @@ a.popular-btn {
   text-transform: uppercase;
   color: #000000;
 }
+.catalog {
+  margin-top: 20px;
+}
 
 .catalog-title {
   font-family: "Cuprum", "Arial", sans-serif;
@@ -1372,7 +1375,7 @@ a.popular-btn {
   margin: 0;
   padding-left: 27px;
   padding-top: 29px;
-  padding-bottom: 34px;
+  padding-bottom: 29px;
   background-image: url(/img/top-background.jpg);
 }
 
@@ -1385,7 +1388,67 @@ a.popular-btn {
   margin-right: 20px;
 }
 
+.filtres-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+  margin: 0;
+  padding-left: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog-sorting {
+  display: flex;
+  background-color: #f7f3ec;
+  padding-left: 18px;
+  padding-right: 16px;
+}
+
+.catalog-sorting-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  margin: 0;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.catalog-sorting-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  
+  margin: 0;
+  margin-left: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 0.3;
+  text-decoration: underline dotted;
+  text-decoration-color: #ee3643;
+}
+
+.catalog-sorting-link:hover {
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #ee3643;
+  opacity: 1;
+}
+
+.catalog-sorting-link:active{
+  color: #ee3643;
+  text-decoration: none;
+}
+
 .catalog-list .popular-item {
+  margin-top: 20px;
+  margin-bottom: 0;
   margin-right: 0;
   margin-left: 20px;
 }
@@ -1394,10 +1457,46 @@ a.popular-btn {
   margin-left: 0;
 }
 
-.catalog-list .popular-item:nth-of-type(4n) {
+.catalog-list .popular-item:nth-of-type(3n+1) {
   margin-left: 0;
 }
 
+.pagination {
+  margin-top: 52px;
+  margin-bottom: 60px;
+}
+
+.pagination-link {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 13px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 15px;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-link:hover {
+
+}
+
+.pagination-link:active {
+  border-color: #ee3643;
+}
+
+.pagination-link:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.pagination-link:last-of-type {
+  padding-left: 32px;
+  padding-right: 31px;
+}
 
 .description {
   background-image: url(/img/top-background.jpg);
@@ -1409,4 +1508,10 @@ a.popular-btn {
   text-transform: uppercase;
   margin: 0;
   padding-top: 68px;
+}
+
+.description-text {
+  margin: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
