@@ -1028,13 +1028,13 @@ a.popular-btn {
 
 /*-------------Стили для about----------*/
 .company {
+  margin-top: 48px;
   margin-bottom: 86px;
 }
 
 .company-box {
   display: flex;
   min-width: 536px;
-  padding-top: 48px;
 }
 
 .company-wrap {
@@ -1207,7 +1207,7 @@ a.popular-btn {
   color: #ee3643;
 }
 
-.footer-nav {
+.footer-main-box {
   margin-top: 33px;
   display: flex;
   justify-content: space-between;
@@ -1221,7 +1221,7 @@ a.popular-btn {
 }
 
 .footer-category-item:not(:last-of-type) {
-  padding-right: 59px;
+  margin-right: 59px;
 }
 
 .footer-bottom .container {
@@ -1238,14 +1238,15 @@ a.popular-btn {
 
 .social-list {
   display: flex;
-    list-style: none;
-    margin: 0;
-    padding-left: 160px;
+  list-style: none;
+  margin: 0;
+  margin-left: 160px;
 }
 
 .feedback {
   font-family: "Cuprum", "Arial", sans-serif;
   display: flex;
+  margin-left: 123px;
 }
 
 .social-item {
@@ -1283,10 +1284,6 @@ a.popular-btn {
 .social-links-inst{
   top: 8px;
   left: 10px;
-}
-
-.feedback {
-  padding-left: 123px;
 }
 
 .feedback-preveiw,
@@ -1424,7 +1421,8 @@ a.popular-btn {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-  
+  position: relative;
+
   margin: 0;
   margin-left: 18px;
   margin-top: 10px;
@@ -1444,6 +1442,21 @@ a.popular-btn {
 .catalog-sorting-link:active{
   color: #ee3643;
   text-decoration: none;
+}
+
+.catalog-link-icon {
+  fill: #000000;
+  opacity: 0.3;
+
+}
+
+.catalog-link-icon:hover {
+  fill: #000000;
+  opacity: 1;
+}
+
+.catalog-link-icon:active {
+  fill: #ee3643;
 }
 
 .catalog-list .popular-item {
