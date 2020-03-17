@@ -641,7 +641,7 @@
   </footer>
   <div class="popup popup-feedback">
     <button class="popup-close" type="button">
-      Закрыть
+      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
     </button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="popup-field-conteiner">
@@ -658,11 +658,12 @@
           <input class="field-input" type="email" name="user-email" id="user-email" placeholder="email@example.com">
         </div>
       </div>
-      <div class="popup-field">
-        <label class="field-label" for="text-mail">
+      <div class="popup-field-textarea">
+        <label class="field-label-mail" for="text-mail">
           Текст письма:
         </label>
-        <textarea class="field-input" name="text-mail" id="text-mail" placeholder="В свободной форме"></textarea>
+        <textarea class="field-input-textarea" cols="69"
+        rows="7"  name="text-mail" id="text-mail" placeholder="В свободной форме"></textarea>
       </div>
       <div class="popup-bottom">
         <button class="btn btn-popup-feedback" type="submit">Отправить</button>

@@ -1304,9 +1304,20 @@ a.popular-btn {
   
 }
 
+.popup-close {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 .popup-feedback {
   top: 120px;
-  left: 15%;
+  left: 25%;
 
   width: 620px;
   box-shadow: 0 -5px 0 0 #ff5357;
@@ -1316,12 +1327,70 @@ a.popular-btn {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 18px;
   line-height: 18px;
+  margin-bottom: 13px;
 }
 
 .popup-field-conteiner {
-  display: flex ;
+  display: flex;
+  margin: 0 80px;
+  margin-top: 48px;
 }
 
+.field-input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #a9a9a9;
+  width: 220px;
+  height: 38px;
+  border: 2px solid #a9a9a9;
+}
+
+.popup-field:nth-of-type(2n) {
+  margin-left: 20px;
+}
+
+.field-input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #a9a9a9;
+  padding-left: 10px;
+}
+
+.field-label-mail {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  display: block;
+  margin-bottom: 13px;
+}
+
+.popup-field-textarea {
+  margin: 0 80px;
+  margin-top: 18px;
+  margin-bottom: 37px;
+}
+
+.field-label {
+  display: block;
+}
+
+.field-input-textarea {
+  border: 2px solid #a9a9a9;
+}
+
+.field-input-textarea::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: #a9a9a9;
+  padding-left: 10px;
+}
+
+.popup-bottom {
+  background-color: #f4f4f4;
+}
+
+.btn-popup-feedback {
+  margin: 37px 80px;
+  padding-left: 198px;
+  padding-right: 199px;
+}
 /*------------Стили для страницы Catalog-----*/
 .hide {
   display: none;
@@ -1395,6 +1464,31 @@ a.popular-btn {
   padding-left: 18px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.filtres-label{
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filtres-fieldset {
+  border: none;
+}
+
+.filtres-legend {
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.filtres-list {
+  list-style: none;
 }
 
 .catalog-sorting {
@@ -1495,7 +1589,8 @@ a.popular-btn {
 }
 
 .pagination-link:hover {
-
+  color: #000000;
+  border: 1px solid #e5e5e5;
 }
 
 .pagination-link:active {

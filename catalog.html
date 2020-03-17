@@ -193,7 +193,18 @@
           <p class="filtres-title">
             Фильтр
           </p>
-          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="post" oninput="filter-price-output.value=filter-prise.value">
+            <fieldset class="filtres-fieldset">
+              <label class="filtres-label">
+                Цена:
+              </label>
+              <input type="range" id="filter-price" name="filter-price" min="0" max="30000" step="1">
+              <div>
+                <input type="text" class="min-price">
+                <input type="text" class="max-price">
+                <output name="filter-price-output"  for="filter-price"></output>
+              </div>
+            </fieldset>
             <fieldset class="filtres-fieldset">
               <legend class="filtres-legend">
                 Производители:
