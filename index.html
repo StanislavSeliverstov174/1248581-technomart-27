@@ -513,7 +513,7 @@
               <br>
               заехав в наш офис:
             </p>
-            <a class="contacts-map-link" href="#">
+            <a class="contacts-map-link contacts-map-btn" href="#">
               <img class="contacts-map-image" width="300" height="158" src="img/mini-map.jpg" alt="Миникарта">
             </a>
           </div>
@@ -641,7 +641,7 @@
   </footer>
   <div class="popup popup-feedback">
     <button class="popup-close" type="button">
-      <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+      <svg  enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
     </button>
     <form action="https://echo.htmlacademy.ru" method="post">
       <div class="popup-field-conteiner">
@@ -670,14 +670,80 @@
       </div>
     </form>
   </div>
-  <div class="popup popup-map hide">
+  <div class="popup-map">
     <button class="popup-close" type="button">
-      <span class="visually-hidden">
-        Закрыть
-      </span>
     </button>
     <img src="img/map-popup.jpg" width="970" height="476" alt="Большая конюшенная улица д.19">
   </div>
+
+  <script>
+    var link = document.querySelector(".write-us-btn");
+
+    var popup_feedback = document.querySelector(".popup-feedback");
+
+    var close_feedback = popup_feedback.querySelector(".popup-close");
+    var form = popup_feedback.querySelector("form");
+    var user_name = popup_feedback.querySelector("[name=user-name]");
+    var user_email = popup_feedback.querySelector("[name=user-email]");
+    var text_mail = popup_feedback.querySelector("[name=field-input-textarea]");
+
+
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup_feedback.classList.add("popup-feedback-show");
+      user_name.focus();
+    });
+
+    close_feedback.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup_feedback.classList.remove("popup-feedback-show");
+
+      popup_feedback.classList.remove("popup-feedback-error");
+    });
+
+    form.addEventListener("submit", function (evt) {
+    if (!user_name.value || !user_email.value || !text_mail.value) {
+      evt.preventDefault();
+      popup_feedback.classList.remove("popup-feedback-error");
+      popup_feedback.offsetWidth = popup_feedback.offsetWidth;
+      popup_feedback.classList.add("popup-feedback-error");
+      
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup_feedback.classList.contains("popup-feedback-show")) {
+          popup_feedback.classList.remove("popup-feedback-show");
+          popup_feedback.classList.remove("popup-feedback-error");
+        }
+      }
+    });
+
+    var mapLink = document.querySelector(".contacts-map-btn");
+    var mapPopup = document.querySelector(".popup-map-show");
+    var mapClose = mapPopup.querySelector(".popup-close");
+
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("popup-map-show");
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("popup-map-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("popup-map-show")) {
+          evt.preventDefault();
+          mapPopup.classList.remove("popup-map-show");
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>

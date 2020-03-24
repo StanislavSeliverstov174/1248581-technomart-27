@@ -1296,31 +1296,77 @@ a.popular-btn {
 }
 
 /*-------Стили для формы обратной связи------*/
+@keyframes bounce {
+  0% {
+    transform: translateX(-2000px);
+  }
+
+  60% {
+    transform: translateY(10px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateY(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateY(10px);
+  }
+}
 
 .popup {
   position: fixed;
-  
+  display: none;
   background-color: #ffffff;
-  
+}
+
+.popup-feedback-show {
+  display: block;
+
+  animation: bounce 0.6s;
+}
+
+.popup-feedback-error {
+  animation: shake 0.6s;
+}
+
+.popup-feedback {
+  top: 120px;
+  left: 32%;
+  width: 620px;
+  box-shadow: 0 -5px 0 0 #ff5357;
 }
 
 .popup-close {
   position: absolute;
   top: 8px;
   right: 15px;
-  width: 22px;
-  height: 22px;
+  padding: 0;
   background-color: transparent;
   border: 0;
   cursor: pointer;
-}
-
-.popup-feedback {
-  top: 120px;
-  left: 25%;
-
-  width: 620px;
-  box-shadow: 0 -5px 0 0 #ff5357;
 }
 
 .field-label {
@@ -1332,7 +1378,7 @@ a.popular-btn {
 
 .popup-field-conteiner {
   display: flex;
-  margin: 0 80px;
+  padding: 0 80px;
   margin-top: 48px;
 }
 
@@ -1363,7 +1409,7 @@ a.popular-btn {
 }
 
 .popup-field-textarea {
-  margin: 0 80px;
+  padding: 0 80px;
   margin-top: 18px;
   margin-bottom: 37px;
 }
@@ -1391,6 +1437,21 @@ a.popular-btn {
   padding-left: 198px;
   padding-right: 199px;
 }
+
+/*---------Стили для карты--------*/
+
+.popup-map {
+  position: fixed;
+  display: none;
+  
+  top: 120px;
+  left: 16%;
+}
+
+.popup-map-show {
+  display: block;
+}
+
 /*------------Стили для страницы Catalog-----*/
 .hide {
   display: none;
@@ -1622,4 +1683,35 @@ a.popular-btn {
   margin: 0;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+/*----Стили для формы на странице каталога----*/
+.popup-added-wrap {
+  margin: 0 80px;
+  display: flex;
+  margin-top: 49px;
+  margin-bottom: 48px;
+}
+.popup-item-added {
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  margin-left: 31px;
+}
+
+.popup-added-cart .popup-bottom {
+  padding: 37px 80px;
+}
+
+.popup-added-cart .btn-popup-continue {
+  width: 218px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.btn-popup-added {
+  margin-right: 20px;
+  width: 218px;
 }
